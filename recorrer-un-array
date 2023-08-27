@@ -1,0 +1,42 @@
+console.log("-- Recorrer con for --");
+let autos = ["Nissan", "Volvo", "BMW"];
+for (let i = 0; i < autos.length; i++) {
+  console.log(" -Posicion " + i + " : " + autos[i]);
+}
+
+console.log("-- Recorrer con while --");
+const colores = ["rojo", "verde", "azul"];
+let j = 0;
+while (j < colores.length) {
+  console.log(" -Posicion " + j + " : " + colores[j]);
+  j++;
+}
+console.log("-- Recorrer con Do-while --");
+const frutas = ["Manzana", "Pera", "Uva"];
+let k = 0;
+do {
+  console.log(" -Posicion " + k + " : " + frutas[k]);
+  k++;
+} while (k < frutas.length);
+
+console.log("-- Recorrer con for of --");
+const idiomas = ["Ingles", "Fraces", "Aleman"];
+for (const idioma of idiomas) {
+  console.log(" -Idioma: " + idioma);
+}
+
+console.log("-- Recorrer con for each --");
+const nombresMinusculas = ["jose", "carlos", "maria"];
+
+nombresMinusculas.forEach(myFunction);
+function myFunction(value) {
+  console.log("Nombres en Mayusculas: " + value.toUpperCase());
+}
+
+console.log("-- Recorrer con map --");
+const precios = [10, 20, 30];
+const descuento = 5;
+const preciosConDescuento = precios.map((precio) => precio - descuento);
+
+console.log("Precios originales: " + precios);
+console.log("Nuevos precios : " + preciosConDescuento);
